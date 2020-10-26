@@ -280,9 +280,9 @@ Wire Wire Line
 Wire Wire Line
 	5050 4950 4850 4950
 Text Label 4850 4850 0    50   ~ 0
-OSC_P
-Text Label 4850 4950 0    50   ~ 0
 OSC_N
+Text Label 4850 4950 0    50   ~ 0
+OSC_P
 $Comp
 L Device:C C9
 U 1 1 5F9F7123

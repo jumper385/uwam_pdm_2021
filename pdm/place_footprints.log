@@ -1,0 +1,10 @@
+10-26 22:39:04 place_footprints.action_place_footprints 414:Plugin executed on: 'win32'
+10-26 22:39:04 place_footprints.action_place_footprints 415:Plugin executed with python version: '2.7.15 (default, Oct 11 2018, 12:09:51)  [GCC 8.2.0 64 bit (AMD64)]'
+10-26 22:39:04 place_footprints.action_place_footprints 416:KiCad build version: Unknown
+10-26 22:39:04 place_footprints.action_place_footprints 417:Place footprints plugin version: 54 started
+10-26 22:39:07 place_footprints.place_footprints 213:getting project hierarchy from schematics
+10-26 22:39:07 place_footprints.place_footprints 228:getting a list of all footprints on board
+10-26 22:39:07 place_footprints.action_place_footprints 472:Reference designator is: F
+10-26 22:39:07 place_footprints.action_place_footprints 473:Rerefence number is: 2
+10-26 22:39:07 place_footprints.action_place_footprints 504:Sorted and filtered list:
+[u'F1', u'F2', u'F3', u'F4', u'F5']
