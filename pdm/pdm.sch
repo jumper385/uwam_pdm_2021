@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pdm-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -279,9 +280,9 @@ Wire Wire Line
 Wire Wire Line
 	5050 4950 4850 4950
 Text Label 4850 4850 0    50   ~ 0
-PD0
+OSC_N
 Text Label 4850 4950 0    50   ~ 0
-PD1
+OSC_P
 $Comp
 L Device:C C9
 U 1 1 5F9F7123
@@ -981,11 +982,11 @@ Connection ~ 950  7350
 Wire Wire Line
 	950  7350 1250 7350
 Text Label 2000 3850 2    50   ~ 0
-PD1
+OSC_P
 Wire Wire Line
 	1050 3850 1050 4550
 Text Label 2000 4550 2    50   ~ 0
-PD0
+OSC_N
 Wire Wire Line
 	1650 3850 2000 3850
 Connection ~ 1650 3850
@@ -1196,14 +1197,18 @@ Wire Wire Line
 Wire Wire Line
 	900  6850 1250 6850
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0108
 U 1 1 5FA6CF0E
 P 1050 6500
-F 0 "#PWR?" H 1050 6350 50  0001 C CNN
+F 0 "#PWR0108" H 1050 6350 50  0001 C CNN
 F 1 "+12V" H 1065 6673 50  0000 C CNN
 F 2 "" H 1050 6500 50  0001 C CNN
 F 3 "" H 1050 6500 50  0001 C CNN
 	1    1050 6500
 	1    0    0    -1  
 $EndComp
+Text Label 2850 2700 0    50   ~ 0
+_N
+Text Label 2850 2800 0    50   ~ 0
+_P
 $EndSCHEMATC
