@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 5F958CF3
-P 2250 1200
-F 0 "J1" H 2330 1242 50  0000 L CNN
-F 1 "Conn_01x05" H 2330 1151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 2250 1200 50  0001 C CNN
-F 3 "~" H 2250 1200 50  0001 C CNN
-	1    2250 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 5F958EBB
 P 1850 1500
@@ -118,26 +107,6 @@ Wire Wire Line
 	3150 2900 2850 2900
 Wire Wire Line
 	2850 2900 2850 2800
-$Comp
-L dk_PMIC-Voltage-Regulators-Linear:AZ1117CH-3_3TRG1 U1
-U 1 1 5F973525
-P 2350 6850
-F 0 "U1" H 2400 7137 60  0000 C CNN
-F 1 "AZ1117CH-3_3TRG1" H 2400 7031 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 2550 7050 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf" H 2550 7150 60  0001 L CNN
-F 4 "AZ1117CH-3.3TRG1DICT-ND" H 2550 7250 60  0001 L CNN "Digi-Key_PN"
-F 5 "AZ1117CH-3.3TRG1" H 2550 7350 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 2550 7450 60  0001 L CNN "Category"
-F 7 "PMIC - Voltage Regulators - Linear" H 2550 7550 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf" H 2550 7650 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/AZ1117CH-3.3TRG1/AZ1117CH-3.3TRG1DICT-ND/4505206" H 2550 7750 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC REG LINEAR 3.3V 800MA SOT223" H 2550 7850 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 2550 7950 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2550 8050 60  0001 L CNN "Status"
-	1    2350 6850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR01
 U 1 1 5F9747FF
@@ -538,7 +507,6 @@ $EndComp
 Connection ~ 900  6750
 Wire Wire Line
 	900  6750 900  6850
-NoConn ~ 2750 6950
 Wire Wire Line
 	6350 6000 6600 6000
 Wire Wire Line
@@ -1098,4 +1066,36 @@ Text Label 2600 5200 3    50   ~ 0
 VDDIO
 Text Label 3300 5200 3    50   ~ 0
 VDDIO
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:AZ1117CH-3_3TRG1 U1
+U 1 1 5F973525
+P 2350 6850
+F 0 "U1" H 2400 7137 60  0000 C CNN
+F 1 "AZ1117CH-3_3TRG1" H 2400 7031 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2550 7050 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf" H 2550 7150 60  0001 L CNN
+F 4 "AZ1117CH-3.3TRG1DICT-ND" H 2550 7250 60  0001 L CNN "Digi-Key_PN"
+F 5 "AZ1117CH-3.3TRG1" H 2550 7350 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 2550 7450 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 2550 7550 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf" H 2550 7650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/AZ1117CH-3.3TRG1/AZ1117CH-3.3TRG1DICT-ND/4505206" H 2550 7750 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 800MA SOT223" H 2550 7850 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 2550 7950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2550 8050 60  0001 L CNN "Status"
+	1    2350 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5F958CF3
+P 2250 1200
+F 0 "J1" H 2330 1242 50  0000 L CNN
+F 1 "Conn_01x05" H 2330 1151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 2250 1200 50  0001 C CNN
+F 3 "~" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2750 6950
 $EndSCHEMATC
